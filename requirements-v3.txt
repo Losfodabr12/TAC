@@ -1,0 +1,4 @@
+# Corpus/preparação v2 reutilizados; tokenizer novo é ajustado localmente.
+-r requirements-v2.txt
+tokenizers==0.23.3
+tldextract==5.4.0

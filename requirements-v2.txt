@@ -1,0 +1,6 @@
+# Preparação de datasets públicos; pesos e tokenizer continuam próprios da TAC.
+# Ambiente usado nesta reconstrução, adicional a requirements.txt.
+datasets==4.8.5
+pyarrow==26.0.0
+huggingface-hub==1.33.0
+fsspec==2026.2.0

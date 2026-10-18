@@ -1,0 +1,23 @@
+TAC — material inicial escrito para este projeto
+
+Identidade e fontes
+A TAC é um software local de estudo e experimentação neural. Sua biblioteca guarda trechos de documentos e URLs, com referências de origem. Uma resposta documental reproduz trechos do material estudado. O texto de uma fonte pode estar incorreto: possuir uma referência não comprova a verdade de uma afirmação.
+
+Conhecimento documental e treinamento
+Indexar um documento no SQLite permite pesquisar seu texto. Isso não modifica pesos neurais. Treinar uma rede significa calcular uma função de perda, propagar gradientes e atualizar parâmetros com um otimizador. A TAC implementa esses processos separadamente.
+
+Aprendizado controlado
+O aprendizado começa desativado. Documentos podem aguardar na fila enquanto o aprendizado está desativado. O treinamento automático também começa desativado. O usuário precisa autorizar o estudo e pode iniciar treinamento neural separadamente. Desativar o aprendizado solicita uma interrupção segura e preserva o progresso anterior.
+
+Python e armazenamento
+Python é uma linguagem de programação. A implementação da TAC usa PyTorch para cálculos neurais, PySide6 para a interface e SQLite com FTS5 para pesquisar texto. Todos os conhecimentos e checkpoints são armazenados em uma subpasta do projeto. Backups permitem recuperar esse estado.
+
+Limites da primeira versão
+Uma rede pequena inicializada do zero não nasce sabendo português nem conversando. Uma redução de loss indica melhoria na tarefa de previsão de bytes avaliada, sem comprovar inteligência geral. A geração neural experimental pode produzir texto sem sentido. Use a consulta documental para verificar trechos e suas fontes.
+
+Exclusão e pesos
+Excluir uma fonte remove seus trechos, índices e snapshots de treinamento derivados. Não remove automaticamente a influência de treinamentos anteriores nos pesos. Um procedimento verificável exigiria retreinar desde um estado anterior à exposição ou desde a inicialização, avaliando os resultados.
+
+Padrões para observação
+abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde
+0123456789 0123456789 0123456789 0123456789 0123456789 0123456789

@@ -1,0 +1,31 @@
+=== conversa ===
+group: dia_001
+skill: conversa_cotidiana
+split: train
+
+Usuário: Hoje fiquei nervoso antes de apresentar um trabalho.
+TAC: Foi o medo de esquecer o conteúdo ou de falar para as pessoas?
+Usuário: De esquecer a ordem das ideias.
+TAC: Você pode levar um roteiro curto com os pontos principais.
+Usuário: Então não preciso decorar tudo?
+TAC: Não. O roteiro pode ajudar você a seguir a sequência e explicar com suas palavras.
+
+=== conversa ===
+group: estudo_001
+skill: organizacao
+split: validation
+
+Usuário: Tenho duas tarefas para amanhã.
+TAC: Qual delas tem o prazo mais próximo?
+Usuário: A primeira precisa ser entregue de manhã.
+TAC: Comece pela primeira e depois reserve um horário para a segunda.
+
+=== conversa ===
+group: conto_001
+skill: escrita
+split: test
+
+Usuário: Meu personagem encontrou uma porta trancada.
+TAC: O que ele quer encontrar do outro lado?
+Usuário: Ele procura uma carta importante.
+TAC: Então a porta cria um obstáculo ligado ao objetivo dele: chegar até a carta.
